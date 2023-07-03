@@ -13,7 +13,7 @@
       <a-assets>
         <!-- 3Dモデルを読み込む -->
         <a-asset-item id="daiwa" src="kingyodaiwa.glb" scale="1 1 1"></a-asset-item>
-        <a-asset-item id="apple" src="applemove.glb" scale="1 1 1"></a-asset-item>
+        <a-asset-item id="dino" src="applemove.glb" scale="1 1 1"></a-asset-item>
       </a-assets>
       <!-- マーカーを設定する -->
       <a-marker type="pattern" url="armarker.patt">
@@ -23,11 +23,13 @@
       
       <a-marker type="pattern" url="snow.patt">
         <!-- 3Dモデルを呼び出す -->
-          <a-entity id="applemove" scale="1 1 1">
-    <a-entity rotation="0 0 0"
-              gltf-model="#apple"
+          <a-entity id="dino" scale="1 1 1">
+    <a-entity id="dino" position="-1 0 -3" scale="0.5 0.5 0.5">
+    <a-entity position="0 2.15 0" rotation="0 55 0"
+              gltf-model="#spinosaurus"
               animation-mixer
               shadow="cast: true; receive: false"></a-entity>
+  </a-entity>
   </a-entity>
       </a-marker>
       
