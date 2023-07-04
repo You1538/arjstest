@@ -20,7 +20,8 @@
         <!-- 3Dモデルを呼び出す -->
         <a-entity gltf-model="#daiwa" rotation="-90 0 0"></a-entity>
       </a-marker>
-      
+
+       <!-- マーカーを設定する -->
       <a-marker type="pattern" url="apple.patt">
         <!-- 3Dモデルを呼び出す -->
           <a-entity id="apple" scale="1 1 1">
@@ -37,14 +38,14 @@
     </a-scene>
   </body>
   <script>
-      //glTFの表示が暗くなる問題に対処
+      <!-- glTFの表示が暗くなる問題に対処 -->
       document.querySelector("a-scene").renderer.gammaOutput=true;
   </script>
-      //チラつきを抑える
-//  <script>
-//        const sceneEl = document.querySelector('a-scene');
-//        sceneEl.addEventListener('loaded', () => {
-//            sceneEl.camera = new THREE.PerspectiveCamera();
-//        });
-//      </script>
+<!-- チラつきを抑える -->
+  <script>
+        const sceneEl = document.querySelector('a-scene');
+        sceneEl.addEventListener('loaded', () => {
+            sceneEl.camera = new THREE.PerspectiveCamera();
+        });
+      </script>
 </html>
