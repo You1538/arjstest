@@ -15,27 +15,10 @@
         <a-asset-item id="daiwa" src="kingyodaiwa.glb" scale="1 1 1"></a-asset-item>
         <a-asset-item id="applemove" src="applemove.glb" scale="1 1 1"></a-asset-item>
       </a-assets>
-      
-      <!-- マーカーを設定する -->
-      <a-marker type="pattern" url="armarker.patt">
-        <!-- 3Dモデルを呼び出す -->
-        <a-entity gltf-model="#daiwa" rotation="-90 0 0"></a-entity>
-      </a-marker>
-
-       <!-- マーカーを設定する -->
-      <a-marker type="pattern" url="snow.patt">
-        <!-- 3Dモデルを呼び出す -->
-          <a-entity id="apple" scale="1 1 1">
-    <a-entity position="0 2.15 0" rotation="-90 0 0"
-              gltf-model="#applemove"
-              animation-mixer
-              shadow="cast: true; receive: false"></a-entity>
-      </a-entity>
-      </a-marker>
 
 
        <!-- マーカーを設定する -->
-      <a-marker type="pattern" url="leafapple.patt">
+      <a-marker type="pattern" url="apple.patt">
         <!-- 3Dモデルを呼び出す -->
           <a-entity id="apple2" scale="1 1 1">
     <a-entity position="0 2.15 0" rotation="-90 0 0"
@@ -46,7 +29,7 @@
       </a-marker>
 
        <!-- マーカーを設定する -->
-      <a-marker type="pattern" url="waterkingyo.patt">
+      <a-marker type="pattern" url="kingyo.patt">
         <!-- 3Dモデルを呼び出す -->
         <a-entity gltf-model="#daiwa" rotation="-90 0 0"></a-entity>
       </a-marker>
